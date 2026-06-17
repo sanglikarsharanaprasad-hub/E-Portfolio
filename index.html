@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharanaprasad B Sanglikar | Edge AI & Embedded Systems Engineer</title>
+  <meta name="description" content="Portfolio of Sharanaprasad B Sanglikar, a First-Year Computer Science Engineering student at REVA University specializing in Edge AI, Advanced IoT, and Frontend Development.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme loading">
+  
+  <!-- Page Loader -->
+  <div id="loader" class="page-loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text font-mono">BOOTSTRAPPING EMBEDDED ENGINE...</div>
+    </div>
+  </div>
+
+  <!-- Interactive Antigravity Canvas Background -->
+  <canvas id="antigravity-canvas"></canvas>
+
+  <!-- Nav Bar -->
+  <header id="navbar" class="navbar-container">
+    <div class="navbar-content">
+      <a href="#home" class="nav-logo">
+        <span class="logo-accent">S</span>BS
+      </a>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="theme-btn">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="badge-container scroll-reveal">
+          <span class="animated-badge">
+            <span class="badge-dot"></span>
+            ⚡ Shifting the boundaries of Edge AI & IoT
+          </span>
+        </div>
+        <h1 class="hero-headline scroll-reveal" id="hero-name-headline">Sharanaprasad B Sanglikar</h1>
+        <h2 class="hero-subheadline scroll-reveal">
+          First-Year Computer Science Engineering Student at REVA University, Bangalore 
+          <span class="highlight-text">(AI & Data Science, Class of 2029)</span>.
+        </h2>
+        <p class="hero-intro scroll-reveal">
+          An ambitious engineer bridging the gap between hardware, cloud intelligence, and creative media. 
+          Currently designing offline-first smart systems and interactive software ecosystems right from my first year of university.
+        </p>
+        <div class="hero-ctas scroll-reveal">
+          <a href="#projects" class="btn btn-solid">Explore Projects</a>
+          <a href="https://github.com/sanglikarsharanaprasad-hub" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Bento Grid Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header scroll-reveal">
+        <span class="section-tag font-mono">/ PORTFOLIO</span>
+        <h2 class="section-title">Featured Systems & Software</h2>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Card 1: KrishiScan (Double Width) -->
+        <div class="bento-card double-width scroll-reveal" id="project-krishiscan">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Flagship System</span>
+                <span class="tech-badge font-mono">Edge AI</span>
+              </div>
+              <a href="https://krishi-scan-814ib7pe5-sanglikarsharanaprasad-hubs-projects.vercel.app?_vercel_share=kjK5ThAoy1bj3LYFrCqtljGoShJns5z9" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="Visit KrishiScan Live Application">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">KrishiScan — Handheld Farm Intelligence Device</h3>
+              <p class="project-desc">
+                An offline-first agritech system integrating a 12 MP multi-spectral leaf camera and a 5-sensor electrochemical soil probe. Driven by an on-device, INT8-quantized MobileNetV3 CNN model achieving 94% diagnostic accuracy for dual crop-and-soil prescriptions in under 5 seconds.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <div class="tags-container">
+                <span class="tag">Python</span>
+                <span class="tag">MobileNetV3</span>
+                <span class="tag">Raspberry Pi 4</span>
+                <span class="tag">TFLite</span>
+                <span class="tag">INT8 Quantization</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">HTML5/CSS3/JS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Maxon Voice Assistant (Standard Width) -->
+        <div class="bento-card scroll-reveal" id="project-maxon">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Team Lead</span>
+                <span class="tech-badge font-mono">Advanced IoT</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Maxon — Intelligent AI Voice Assistant</h3>
+              <p class="project-desc">
+                Led a engineering team to build a low-cost, bidirectional voice assistant leveraging an ESP32 microcontroller and the Xiaozhi AI cloud platform. Utilizes I2S audio protocols (INMP441/MAX98357A), Qwen-32B/35B LLM models for English/Hindi interaction, and an MCP server framework for sensor routing to Telegram.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <div class="tags-container">
+                <span class="tag">ESP32</span>
+                <span class="tag">IoT Architecture</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Qwen LLM</span>
+                <span class="tag">I2S Protocol</span>
+                <span class="tag">API Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Academic Overview (Standard Width) -->
+        <div class="bento-card scroll-reveal" id="academic-overview">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Academic Profile</span>
+              </div>
+              <div class="academic-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Reva University</h3>
+              <div class="academic-timeline">
+                <div class="academic-item">
+                  <span class="academic-label font-mono">Degree</span>
+                  <span class="academic-value">B.Tech CSE (AI & Data Science)</span>
+                </div>
+                <div class="academic-item">
+                  <span class="academic-label font-mono">Status</span>
+                  <span class="academic-value">1st Year Student</span>
+                </div>
+                <div class="academic-item">
+                  <span class="academic-label font-mono">Class of</span>
+                  <span class="academic-value">2029</span>
+                </div>
+                <div class="academic-item">
+                  <span class="academic-label font-mono">Location</span>
+                  <span class="academic-value">Bangalore, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span class="academic-note font-mono">First-Year Scholar (AI & DS)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: KrishiScan Roadmap (Double Width) -->
+        <div class="bento-card double-width scroll-reveal" id="project-roadmap">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">KrishiScan Roadmap</span>
+                <span class="tech-badge font-mono">Startup Development</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Device & Network Roadmap</h3>
+              
+              <div class="roadmap-timeline">
+                <div class="roadmap-step completed">
+                  <div class="step-marker">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="step-content">
+                    <h4>Research & Specs</h4>
+                    <p>Leaf multi-spectral camera tuning & 5-sensor probe interfaces.</p>
+                  </div>
+                </div>
+
+                <div class="roadmap-step active">
+                  <div class="step-marker">
+                    <span class="pulse-marker-dot"></span>
+                  </div>
+                  <div class="step-content">
+                    <h4>Edge Inference & CNN Training</h4>
+                    <p>Training baseline MobileNetV3 classifiers & quantizing model to INT8.</p>
+                  </div>
+                </div>
+
+                <div class="roadmap-step">
+                  <div class="step-marker">3</div>
+                  <div class="step-content">
+                    <h4>Hardware Integration</h4>
+                    <p>Building handheld housing, deploying on Raspberry Pi, routing offline SQLite logs.</p>
+                  </div>
+                </div>
+
+                <div class="roadmap-step">
+                  <div class="step-marker">4</div>
+                  <div class="step-content">
+                    <h4>Staging & Cloud Sync</h4>
+                    <p>Syncing offline diagnostic logs with local/web clients & Vercel deployment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span class="roadmap-status-text font-mono">Status: Quantizing Neural Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Certifications (Standard Width) -->
+        <div class="bento-card scroll-reveal" id="certifications">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Credentials</span>
+              </div>
+              <div class="academic-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+                  <line x1="7" y1="8" x2="17" y2="8"></line>
+                  <line x1="7" y1="12" x2="17" y2="12"></line>
+                  <line x1="7" y1="16" x2="13" y2="16"></line>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Certifications</h3>
+              <ul class="cert-list font-mono">
+                <li>
+                  <svg viewBox="0 0 24 24" width="14" height="14" class="cert-check" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>IBM Data Science</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="14" height="14" class="cert-check" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>OneStop AI (Deep Learning)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="14" height="14" class="cert-check" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Wadhwani Entrepreneurship</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <span class="cert-verify-badge font-mono">Credentials Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Career Timeline (Double Width) -->
+        <div class="bento-card double-width scroll-reveal" id="career-timeline">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Timeline</span>
+                <span class="tech-badge font-mono">Target Milestones</span>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Engineering Journey</h3>
+              
+              <div class="timeline-row">
+                <div class="timeline-node">
+                  <div class="node-year">2025</div>
+                  <div class="node-content">
+                    <h5>University Intake</h5>
+                    <p>Initiated B.Tech in CSE (AI & Data Science) at REVA University.</p>
+                  </div>
+                </div>
+                
+                <div class="timeline-node">
+                  <div class="node-year">2026</div>
+                  <div class="node-content">
+                    <h5>KrishiScan & Maxon</h5>
+                    <p>Designed agritech systems, voice assistants, and custom C graphics modules.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-node future">
+                  <div class="node-year">2027</div>
+                  <div class="node-content">
+                    <h5>Field Testing</h5>
+                    <p>Staging KrishiScan in operational farm areas, competing in hackathons.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-node future">
+                  <div class="node-year">2028-29</div>
+                  <div class="node-content">
+                    <h5>Research & Graduation</h5>
+                    <p>Publishing lightweight edge AI research, graduating B.Tech program.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span class="timeline-meta font-mono">Forging the future of physical computation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Future Goals (Standard Width) -->
+        <div class="bento-card scroll-reveal" id="future-goals">
+          <div class="bento-card-bg-gradient"></div>
+          <div class="bento-card-content">
+            <div class="card-header">
+              <div class="badge-row">
+                <span class="tech-badge accent-pill">Milestones</span>
+              </div>
+              <div class="academic-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">Future Goals</h3>
+              <ul class="goals-bullet-list font-mono">
+                <li>
+                  <span class="goal-bullet-dot"></span>
+                  <span><strong>Short-Term:</strong> Master PyTorch/TFLite edge inference loops.</span>
+                </li>
+                <li>
+                  <span class="goal-bullet-dot"></span>
+                  <span><strong>Long-Term:</strong> Deploy commercial Edge AI nodes globally.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <span class="goals-footer-text font-mono">Target: Global AgriTech Scale</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-header scroll-reveal">
+        <span class="section-tag font-mono">/ EXPERTISE</span>
+        <h2 class="section-title">Skills Matrix</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Pillar 1 -->
+        <div class="skills-column scroll-reveal">
+          <div class="pillar-header">
+            <div class="pillar-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Core Systems & Languages</h3>
+          </div>
+          <ul class="skills-list">
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Python</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">C</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">C++</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">JavaScript</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Frontend Web Development</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">SQL Basics</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Machine Learning Basics</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="skills-column scroll-reveal">
+          <div class="pillar-header">
+            <div class="pillar-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Embedded AI & Advanced IoT</h3>
+          </div>
+          <ul class="skills-list">
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Edge AI (TFLite)</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">INT8 Quantization</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">OpenCV</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Model Context Protocol (MCP)</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">I2S & I2C Peripherals</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">SQLite Database Design</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="skills-column highlight-column scroll-reveal">
+          <div class="pillar-header">
+            <div class="pillar-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Creative & Strategy</h3>
+          </div>
+          <ul class="skills-list">
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Video Editing</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Digital Content Creation</span>
+            </li>
+            <li>
+              <span class="skill-indicator"></span>
+              <span class="skill-name">Social Media Management & Analytics</span>
+            </li>
+          </ul>
+          <div class="pillar-note font-mono">
+            "Combining deep technical engineering with high-impact visual storytelling and brand asset management."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-layout scroll-reveal">
+        
+        <!-- Left Column: Information Hub -->
+        <div class="contact-info-panel">
+          <h2 class="contact-headline">Let's build something intelligent.</h2>
+          <p class="contact-intro">
+            Have an inquiry, research idea, or collaborative hardware/software project proposal? Drop a message or copy my email address.
+          </p>
+          
+          <!-- Clipboard Block -->
+          <div class="email-copy-block" id="copy-email-trigger" title="Click to copy email">
+            <div class="email-content">
+              <svg class="email-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span class="email-text">sanglikarsharanaprasas@gmail.com</span>
+            </div>
+            <div class="copy-badge">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </div>
+            <div class="tooltip" id="copy-tooltip">Copied to Clipboard!</div>
+          </div>
+
+          <!-- Location Information -->
+          <div class="location-card">
+            <div class="location-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="location-details">
+              <h5>Location</h5>
+              <p>REVA University campus, Bangalore, India</p>
+            </div>
+          </div>
+
+          <!-- Social Connections -->
+          <div class="social-links">
+            <a href="https://github.com/sanglikarsharanaprasad-hub" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/sharannnn___?igsh=MXB1cGN3cncwMWwyMA==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram Profile">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Secure Message Form -->
+        <div class="contact-form-wrapper">
+          <div class="contact-form-card">
+            <h3>Send A Secure Message</h3>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="font-mono">Name</label>
+                <div class="input-wrapper">
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-email" class="font-mono">Email</label>
+                <div class="input-wrapper">
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message" class="font-mono">Message</label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+              
+              <div id="form-status" class="form-status-msg font-mono"></div>
+              
+              <button type="submit" class="btn btn-solid btn-submit">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bottom">
+    <div class="footer-content">
+      <p class="copyright-text">© 2026 Sharanaprasad B Sanglikar. Forging the future of AI & Embedded Systems.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
